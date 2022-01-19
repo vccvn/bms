@@ -1,0 +1,341 @@
+{
+    "data": [{
+            "text": "Dashboard",
+            "title": "Dashboard",
+            "active_key": "dashboard",
+            "route": "admin.dashboard",
+            "icon": "home"
+        },
+        {
+            "text": "Người dùng",
+            "title": "Người dùng",
+            "active_key": "user",
+            "route": "admin.user",
+            "icon": "user",
+            "submenu": {
+                "type": "list",
+                "data": [{
+                        "text": "Danh sách",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "admin.user.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.user.add",
+                        "icon": "plus"
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Phân quyền",
+            "title": "Phân quyền",
+            "active_key": "permission",
+            "route": "admin.permission",
+            "icon": "unlock-alt",
+            "submenu": {
+                "type": "list",
+                "data": [{
+                        "text": "Quyền",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "admin.permission.list",
+                        "icon": "key"
+                    },
+                    {
+                        "text": "Module",
+                        "title": "Danh sách Module",
+                        "active_key": "module.list",
+                        "route": "admin.module.list",
+                        "icon": "window-restore"
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Bài viết",
+            "title": "Bài viết",
+            "active_key": "post",
+            "route": "admin.post",
+            "icon": "file-text-o",
+            "submenu": {
+                "type": "list",
+                "data": [{
+                        "text": "Bài viết",
+                        "title": "Danh sách bài viết",
+                        "active_key": "list",
+                        "route": "admin.post.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Danh mục",
+                        "title": "Danh mục",
+                        "active_key": "list-category",
+                        "route": "admin.post.category.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Thêm bài viết",
+                        "title": "Thêm bài viết",
+                        "active_key": "add",
+                        "route": "admin.post.add",
+                        "icon": "plus"
+                    }
+
+                ]
+            }
+        },
+        {
+            "text": "Sản phẩm",
+            "title": "Sản phẩm",
+            "active_key": "product",
+            "route": "admin.product",
+            "icon": "cube",
+            "submenu": {
+                "type": "list",
+                "data": [{
+                        "text": "Sản phẩm",
+                        "title": "Sản phẩm",
+                        "active_key": "list",
+                        "route": "admin.product.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Danh mục",
+                        "title": "Danh mục",
+                        "active_key": "list-category",
+                        "route": "admin.product.category.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Thêm sản phẩm",
+                        "title": "Thêm sản phẩm",
+                        "active_key": "add",
+                        "route": "admin.product.add",
+                        "icon": "plus"
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Đơn hàng",
+            "title": "Đơn hàng",
+            "active_key": "order",
+            "route": "admin.order",
+            "icon": "shopping-cart",
+            "submenu": {
+                "type": "list",
+                "data": [{
+                        "text": "Danh sách đơn hàng",
+                        "title": "Danh sách đơn hàng",
+                        "active_key": "list",
+                        "route": "admin.order.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Đã hoàn thành",
+                        "title": "Đã hoàn thành",
+                        "active_key": "completed",
+                        "route": "admin.order.list-status",
+                        "param": { "slug": "completed" },
+                        "icon": "check"
+                    },
+                    {
+                        "text": "Đang xử lý",
+                        "title": "Đang xử lý",
+                        "active_key": "processing",
+                        "route": "admin.order.list-status",
+                        "param": { "slug": "processing" },
+                        "icon": "truck"
+                    },
+                    {
+                        "text": "Đơn hàng mới",
+                        "title": "Đơn hàng mới",
+                        "active_key": "newest",
+                        "route": "admin.order.list-status",
+                        "param": { "slug": "newest" },
+                        "icon": "refresh"
+                    },
+                    {
+                        "text": "Đơn hàng bị hủy",
+                        "title": "Đơn hàng bị hủy",
+                        "active_key": "cancelled",
+                        "route": "admin.order.list-status",
+                        "param": { "slug": "cancelled" },
+                        "icon": "ban"
+                    }
+
+                ]
+            }
+        },
+        {
+            "text": "Trang",
+            "title": "Trang",
+            "active_key": "page",
+            "route": "admin.page",
+            "icon": "file-text",
+            "submenu": {
+                "type": "list",
+                "data": [{
+                        "text": "Danh sách trang",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "admin.page.list",
+                        "icon": "th-list"
+                    },
+
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.page.add",
+                        "icon": "plus"
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Mục nâng cao",
+            "title": "Mục nâng cao",
+            "active_key": "dynamic",
+            "route": "admin.dynamic",
+            "icon": "file-text",
+            "submenu": {
+                "type": "list",
+                "data": [{
+                        "text": "Danh sách",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "admin.dynamic.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.dynamic.add",
+                        "icon": "plus"
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Phản hồi",
+            "title": "Phản hồi",
+            "active_key": "comment",
+            "url": "#",
+            "icon": "comment",
+            "submenu": {
+                "type": "list",
+                "data": [{
+                        "text": "Phản hồi bài viết",
+                        "title": "Phản hồi bài viết",
+                        "active_key": "post",
+                        "route": "admin.comment.post",
+                        "icon": "file-text"
+                    },
+                    {
+                        "text": "Phản hồi sản phẩm",
+                        "title": "Phản hồi bài viết",
+                        "active_key": "product",
+                        "route": "admin.comment.product",
+                        "icon": "leaf"
+                    },
+                    {
+                        "text": "Phản hồi trên trang",
+                        "title": "Phản hồi trên trang",
+                        "active_key": "page",
+                        "route": "admin.comment.page",
+                        "icon": "file-text"
+                    },
+                    {
+                        "text": "Phản hồi mục",
+                        "title": "Phản hồi mục",
+                        "active_key": "dynamic",
+                        "route": "admin.comment.dynamic",
+                        "icon": "file-text"
+                    },
+                    {
+                        "text": "Nhận hỗ trợ",
+                        "title": "Nhận hỗ trợ",
+                        "active_key": "help",
+                        "route": "admin.comment.help",
+                        "icon": "info-circle"
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Nội dung",
+            "title": "Nội dung",
+            "active_key": "content",
+            "route": "admin.content",
+            "icon": "folder",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Thẻ",
+                        "title": "Thẻ",
+                        "active_key": "tag",
+                        "route": "admin.content.tag",
+                        "icon": "tag"
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Đăng ký theo dõi",
+            "title": "Đăng ký theo dõi",
+            "active_key": "subxriber",
+            "route": "admin.subcriber",
+            "icon": "envelope"
+        },
+        {
+            "text": "Liên hệ",
+            "title": "Liên hệ",
+            "active_key": "contact",
+            "route": "admin.contact",
+            "icon": "envelope"
+        },
+        {
+            "text": "Crawler",
+            "title": "Crawler",
+            "active_key": "crawler",
+            "route": "admin.crawler",
+            "icon": "copy",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Crawl Post",
+                        "title": "Crawl Post",
+                        "active_key": "crawl-post",
+                        "route": "admin.crawler.post.crawl",
+                        "icon": "copy"
+                    },
+                    {
+                        "text": "Frame",
+                        "title": "Frame",
+                        "active_key": "crawl-frame",
+                        "route": "admin.crawler.frame.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Task",
+                        "title": "Task",
+                        "active_key": "crawl-task",
+                        "route": "admin.crawler.task.list",
+                        "icon": "tasks"
+                    }
+                ]
+            }
+        }
+
+    ],
+    "created_at": "2018-01-27 01:20:41"
+}

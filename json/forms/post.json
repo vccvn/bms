@@ -1,0 +1,40 @@
+{
+    "data": {
+        "title": { "type": "text", "text": "Tiêu đề bài viết", "placeholder": "Tiêu đề bài viết" },
+        "cate_id": {
+            "type": "cubeselect", 
+            "text": "Danh mục", 
+            "action": "App\\Repositories\\Posts\\CategoryRepository::getCategorySelectOptions",
+            "param":[4],
+            "option_label_type": "label",
+            "data-select-type": "static",
+            "data-changed-callback" : "console.log"
+        },
+        "custom_slug": { "type": "checkbox", "text": "", "check_label": "Slug" },
+        "slug": { "type": "text", "text": "Slug", "placeholder": "Slug" },
+        "product_cate_id": { "type": "select", "text": "Danh mục sản phẩm", "data": "App\\Models\\ProductCategory::getSearchOpts" },
+
+        "description": { "type": "textarea", "text": "Mô tả ngắn", "row": 4, "placeholder":"Nhập mô tả" },
+
+        "content": { "type": "textarea", "text": "Nội dung", "class": "mce-editor", "height": 500 },
+        "keywords": { "type": "text", "text": "Từ khóa" },
+        "feature_image": { "type": "file", "text": "Hỉnh ảnh" },
+        "show_thumbnail": { "type": "checkbox", "text": "Hiển thị Thumbnail", "check_label": "Hiển thị Thumbnail", "default": 1 },
+
+        "with_sidebar": {
+            "type": "checkbox",
+            "text": "Hiển thị sidebar",
+            "check_label": "Hiển thị sidebar",
+            "default": 1
+        },
+
+        "meta_title": { "type": "text", "text": "Meta Title", "placeholder": "Nhập meta title" },
+        "meta_description": { "type": "textarea", "text": "Meta Description", "placeholder": "Nhập meta description", "row": 4 },
+
+        
+        
+        "nothing": { "type": "hidden" }
+    },
+    "created_at": "2018-03-07 14:41:12",
+    "created_by": "Doanln"
+}

@@ -1,0 +1,15 @@
+{
+    "data": {
+        "name": { "type": "text", "text": "Tên slider", "placeholder": "Nhập tên slider" },
+
+        "position": { "type": "select", "text": "vị trí", "data": "App\\Models\\Slider::getPositionData" },
+        "width": { "type": "number", "text": "Chiều rộng" },
+        "height": { "type": "number", "text": "Chiều cao" },
+        "crop": { "type": "checkbox", "text": "Cố định kích thước", "default": 0, "check_label": "Cố định kích thước" },
+        "priority": { "type": "select", "text": "Độ ưu tiên", "call": "App\\Models\\Slider::getSliderPriorityList", "param": "@position" },
+
+        "nothing": { "type": "hidden" }
+    },
+    "created_at": "2017-12-25 24:35:12",
+    "created_by": "Doanln"
+}

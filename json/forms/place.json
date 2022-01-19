@@ -1,0 +1,21 @@
+{
+    "data": {
+        "name": { "type": "text", "text": "Tên địa điểm", "placeholder": "Nhập địa điểm" },
+
+        "province_id": {
+            "type": "cubeselect",
+            "text": "Tỉnh thành",
+            "action": "App\\Repositories\\Provinces\\ProvinceRepository::getProvinceOptions",
+            "option_label_type": "value",
+            "data-select-type": "static"
+        },
+        "address": {
+            "type": "textarea",
+            "text": "Địa chỉ",
+            "placeholder":"Nhập địa chỉ"
+        },
+
+        "nothing": { "type": "hidden" }
+    },
+    "created_by": "Doanln"
+}

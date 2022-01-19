@@ -1,0 +1,125 @@
+.loading-lightbox {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: none;
+  z-index: 10000;
+}
+
+.loading-lightbox::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.loading-lightbox .loading-wrap {
+  width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.loading-lightbox .loading-wrap .loading {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 500;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-lightbox .loading-wrap .loading .lds-heart {
+  display: inline-block;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  transform: rotate(45deg);
+  transform-origin: 32px 32px;
+}
+
+.loading-lightbox .loading-wrap .loading .lds-heart div {
+  top: 23px;
+  left: 19px;
+  position: absolute;
+  width: 26px;
+  height: 26px;
+  background: RED;
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.loading-lightbox .loading-wrap .loading .lds-heart div:after, .loading-lightbox .loading-wrap .loading .lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 26px;
+  height: 26px;
+  background: red;
+}
+
+.loading-lightbox .loading-wrap .loading .lds-heart div:before {
+  left: -17px;
+  border-radius: 50% 0 0 50%;
+}
+
+.loading-lightbox .loading-wrap .loading .lds-heart div:after {
+  top: -17px;
+  border-radius: 50% 50% 0 0;
+}
+
+.loading-lightbox.dark .loading .lds-heart div, .loading-lightbox.gradient .loading .lds-heart div {
+  background: white;
+}
+
+.loading-lightbox.dark .loading .lds-heart div:after, .loading-lightbox.dark .loading .lds-heart div:before, .loading-lightbox.gradient .loading .lds-heart div:after, .loading-lightbox.gradient .loading .lds-heart div:before {
+  background: white;
+}
+
+.loading-lightbox.gradient::before {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+}
+
+.loading-lightbox.light::before {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.loading-lightbox.dark::before {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}

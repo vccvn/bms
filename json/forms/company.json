@@ -1,0 +1,24 @@
+{
+    "data": {
+        "name": { "type": "text", "text": "Tên nhà xe", "placeholder": "Nhập nhà xe" },
+
+        "email": { "type": "email", "text": "Email", "placeholder": "Nhập email" },
+        "phone_number": { "type": "text", "text": "Số điên thoại", "placeholder": "Nhập số điện thoại" },
+        "address": {
+            "type": "textarea",
+            "text": "Địa chỉ",
+            "placeholder":"Nhập địa chỉ"
+        },
+        "google_map": {
+            "type": "textarea",
+            "text": "Bản đồ",
+            "placeholder":"Nhập Mã nhung google map"
+        },
+        "website": { "type": "text", "text": "Website", "placeholder": "Nhập website" },
+        "facebook": { "type": "text", "text": "Facebook", "placeholder": "Nhập facebook" },
+
+
+        "nothing": { "type": "hidden" }
+    },
+    "created_by": "Doanln"
+}

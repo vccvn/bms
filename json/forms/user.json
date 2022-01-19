@@ -1,0 +1,21 @@
+{
+    "data": {
+        "name": { "type": "text", "text": "Họ tên", "data": [] },
+        "birth_date": { "type": "text", "text": "Ngày sinh", "data": [] },
+        "gender": { "type": "radio", "text": "Giới tính", "data": ["Nam", "Nữ"] },
+        "username": { "type": "text", "text": "Tên đăng nhập", "data": [] },
+        "email": { "type": "email", "text": "Địa chỉ E-mail", "data": [] },
+        "password": { "type": "password", "text": "Mật khẩu", "data": [] },
+        "oldpassword": { "type": "password", "text": "Mật khẩu cũ", "data": [] },
+        "newpassword": { "type": "password", "text": "Mật khẩu mới", "data": [] },
+        "password_confirmation": { "type": "password", "text": "Xác nhận mật khẩu", "data": [] },
+        "avatar": { "type": "file", "text": "Hình đại diện", "data": [] },
+        "role": { "type": "select", "text": "Phân quyền", "data": "App\\Models\\User::getRoleList" },
+
+        "token": { "type": "hidden" },
+
+        "nothing": { "type": "hidden" }
+    },
+    "created_at": "2017-12-25 24:35:12",
+    "created_by": "Doanln"
+}

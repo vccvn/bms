@@ -1,0 +1,24 @@
+{
+    "data": {
+        "province_id": {
+            "type": "cubeselect",
+            "text": "Tỉnh thành",
+            "action": "App\\Repositories\\Provinces\\ProvinceRepository::getProvinceOptions",
+            "option_label_type": "label",
+            "data-select-type": "static",
+            "data-changed-callback" : "Cube.journey.changePassingProvince"
+        },
+        "place_id": {
+            "type": "cubeselect",
+            "text": "Địa điểm",
+            "action": "App\\Repositories\\Places\\PlaceRepository::getPlaceSelectOptions",
+            "param":"@province_id",
+            "option_label_type": "label",
+            "data-select-type": "static"
+        },
+        "route_id": { "type": "hidden" },
+        "nothing": { "type": "hidden" }
+    },
+    "created_by": "Doanln"
+}
+

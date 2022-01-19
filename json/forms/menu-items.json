@@ -1,0 +1,110 @@
+{
+    "data": {
+        "type": {
+            "type": "hidden",
+            "text": "Loại item",
+            "data": {
+                "default": "Item cứng",
+                "category": "Danh mục bài viết",
+                "product_category": "Danh mục sản phẩm",
+                "page": "Trang",
+                "define": "Tự định nghĩa"
+            }
+        },
+
+        "sub_type": {
+            "type": "select",
+            "text": "Kiểu menu con",
+            "data": {
+                "none": "chỉ cho phép sắp xếp trong bảng điều khiển",
+                "default": "Tự động theo loại item"
+            }
+        },
+
+        "link_type": { "type": "hidden", "text": "Kiểu liên kết", "data": { "url": "Link trực tiếp", "route": "Sự dụng route" } },
+
+        "title": { "type": "text", "text": "Tiêu đề", "placeholder": "Tiêu đề item" },
+
+        "icon": { "type": "text", "text": "biểu tượng", "default": "none" },
+
+        "url": { "type": "text", "text": "Đường dẫn", "placeholder": "Nhập Đường dẫn ví dụ: http://www.google.com.vn" },
+
+        "route": { "type": "cubeselect", "text": "Định danh route", "data": "Cube\\Laravel\\LaravelRoute::getSelectNameAndUriMenu" },
+
+        "active_key": { "type": "text", "text": "Mã active", "placeholder": "Nhập mã active. ví dụ: home / about / contact / vv..." },
+
+        "cate_id": { 
+            "type": "cubeselect", 
+            "text": "Chủ đề", 
+            "action": "App\\Repositories\\Posts\\CategoryRepository::getCategorySelectOptions",
+            "param":[4],
+            "option_label_type": "value",
+            "data-select-type": "static"
+        },
+
+        "product_cate_id": { 
+            "type": "Cubeselect", 
+            "text": "Danh mục", 
+            "action": "App\\Repositories\\Products\\ProductCategoryRepository::getCategorySelectOptions",
+            "param":[4],
+            "option_label_type": "value",
+            "data-select-type": "static" 
+        },
+
+        "project_cate_id": { 
+            "type": "Cubeselect", 
+            "text": "Danh mục", 
+            "action": "App\\Repositories\\Projects\\CategoryRepository::getCategorySelectOptions",
+            "param":[4],
+            "option_label_type": "value",
+            "data-select-type": "static" 
+        },
+
+        "page_id": { "type": "select", "text": "Trang", "data": "App\\Repositories\\Pages\\PageRepository::getMenuList" },
+
+        "dynamic_page": { "name":"dynamic_id", "type": "select", "text": "Mục", "data": "App\\Repositories\\Dynamic\\DynamicRepository::getChildrenSelect" },
+
+        "action": { "type": "text", "text": "Hàm / Phương thức", "placeholder": "ví dụ: CustomMenu::get" },
+
+        "param": { "type": "text", "text": "Tham số", "placeholder": "ví dụ: abc hoặc name1=value1&name2=value2" },
+
+        "sub_menu_id": { "type": "select", "text": "Chọn Menu", "data": "App\\Models\\Menu::getMenuList" },
+
+        "sub_cate_id": { "type": "select", "text": "Chọn chủ đề", "data": "App\\Models\\Category::getSubMenuList" },
+
+        "sub_product_cate_id": { "type": "select", "text": "Chọn danh mục", "data": "App\\Models\\ProductCategory::getSubMenuList" },
+
+        "sub_page_id": { "type": "select", "text": "Chọn trang", "data": "App\\Models\\Page::getSubMenuList" },
+
+        "sub_file": { "type": "text", "text": "File JSON", "placeholder": "Nhập tenfile ví dụ: sub1 hoặc sub1.json" },
+
+        "sub_action": { "type": "text", "text": "Hàm / Phương thức", "placeholder": "ví dụ: CustomMenu::get" },
+
+        "sub_param": { "type": "text", "text": "Tham số", "placeholder": "ví dụ: abc hoặc name1=value1&name2=value2" },
+
+        "menu_id": { "type": "hidden" },
+
+        "priority": { "type": "select", "text": "Độ ưu tiên", "data": "App\\Models\\Menu::getItemPriorityList" },
+
+        "classname": { "type": "text", "text": "Class (tùy chọn)", "placeholder": "ví dụ: menu-item" },
+        "target": {
+            "type": "select",
+            "text": "Target",
+            "data": {
+                "none": "Không",
+                "_blank": "Cửa sổ mới"
+            }
+        },
+        "nothing": { "type": "hidden" }
+    },
+    "created_at": "2017-12-26 23:04:12",
+    "created_by": "Doanln",
+    "trash":{
+        "menu": "Trong bảng menu",
+        "category": "Danh mục bài viết",
+        "product_category": "Danh mục Sản phẩm",
+        "page": "Trang",
+        "json": "Sự dụng file JSON",
+        "define": "Tự định nghĩa"
+    }
+}

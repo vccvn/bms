@@ -1,0 +1,45 @@
+{
+    "data": {
+        "title": { "type": "text", "text": "Tiêu đề trang", "placeholder": "Tiêu đề trang" },
+        "custom_slug": { "type": "checkbox", "text": "", "check_label": "Slug" },
+        "slug": { "type": "text", "text": "Slug", "placeholder": "Slug" },
+        "parent_id": {
+            "type": "select",
+            "text": "Page cha",
+            "data": "App\\Repositories\\Pages\\PageRepository::getParentSelectOption"
+        },
+        "description": { "type": "textarea", "text": "Mô tả ngắn", "row": 4 },
+
+        "content": { "type": "textarea", "text": "Nội dung", "class": "mce-editor", "height": 500 },
+        "keywords": { "type": "text", "text": "Từ khóa" },
+        "feature_image": { "type": "file", "text": "Hỉnh ảnh" },
+        "show_thumbnail": { "type": "checkbox", "text": "Hiển thị Thumbnail", "check_label": "Hiển thị Thumbnail", "default": 1 },
+
+        "with_sidebar": {
+            "type": "checkbox",
+            "text": "Hiển thị sidebar",
+            "check_label": "Hiển thị sidebar",
+            "default": 1
+        },
+
+
+        "display_content": {
+            "type": "checkbox",
+            "text": "Định dạng theo nội dung",
+            "check_label": "Định dạng theo nội dung"
+        },
+
+
+        "layout": {
+            "type": "radio",
+            "text": "Layout",
+            "data": {"single":"Single", "sidebar":"sidebar"},
+            "default": "sidebar"
+        },
+
+
+        "nothing": { "type": "hidden" }
+    },
+    "created_at": "2018-04-04 00:06:12",
+    "created_by": "Doanln"
+}

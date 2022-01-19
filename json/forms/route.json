@@ -1,0 +1,76 @@
+{
+    "data": {
+        "name": { 
+            "type": "text", 
+            "text": "Tên tuyến đường", 
+            "placeholder": "Nhập Tên tuyến đường",
+            "required": "true"
+        },
+        "type": {
+            "type":"cubeselect",
+            "text":"Loại tuyến",
+            "data": {
+                "direct": "Đầu - Cuối",
+                "indirect": "Trung gian (Đầu - Cuối là 2 bến khác)",
+                "bus": "Tuyến xe buýt"
+            },
+            "default":"direct",
+            "option_label_type": "value",
+            "data-select-type": "static",
+            "data-changed-callback" : "Cube.routes.changeRouteType",
+            "required": "true"
+        },
+        "from_id": {
+            "type": "cubeselect",
+            "text": "Bến đầu tuyến",
+            "action": "App\\Repositories\\Stations\\StationRepository::getStartOptions",
+            "param":"@type",
+            "option_label_type": "label",
+            "data-select-type": "static",
+            "required": "true"
+        },
+        "to_id": {
+            "type": "cubeselect",
+            "text": "Bến cuối tuyến",
+            "action": "App\\Repositories\\Stations\\StationRepository::getEndOptions",
+            "param":"@type",
+            "option_label_type": "label",
+            "data-select-type": "static",
+            "required": "true"
+        },
+        
+        "distance":{
+            "type": "number",
+            "text":"Chiều dài tuyến (km)",
+            "placeholder": "Nhập Chiều dài tuyến (km)"
+        },
+
+        "month_trips":{
+            "type": "number",
+            "text":"Số chuyến trong 30 ngày",
+            "placeholder": "Nhập số chuyến dược khai thác"
+        },
+
+        "time_start": {
+            "type":"text",
+            "text":"Thời gian bắt đầu",
+            "placeholder":"Nhập thời gian bắt đầu được xuất bến trong ngày",
+            "className":"inp-time"
+        },
+        "time_between": {
+            "type":"text",
+            "text":"Thời gian giãn cách",
+            "placeholder":"Nhập thời gian  giữa 2 chuyến",
+            "className":"inp-time"
+        },
+        "time_end": {
+            "type":"text",
+            "text":"Thời gian kết thúc",
+            "placeholder":"Nhập thời gian chuyến cuối cùng được xuất bến trong ngày",
+            "className":"inp-time"
+        },
+        
+        "nothing": { "type": "hidden" }
+    },
+    "created_by": "Doanln"
+}

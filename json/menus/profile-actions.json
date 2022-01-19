@@ -1,0 +1,33 @@
+{
+    "data": [
+        {
+            "text": "Trang cá nhân",
+            "title": "Trang cá nhân",
+            "active_key": "profile",
+            "route": "user.profile",
+            "icon": "user"
+        },
+        {
+            "text": "Thong báo",
+            "title": "Thong báo",
+            "active_key": "notifications",
+            "url": "#",
+            "icon": "bell"
+        },
+        {
+            "text": "Thiết lập",
+            "title": "Thiết lập",
+            "active_key": "settings",
+            "route": "user.profile.setting",
+            "icon": "gear"
+        },
+        {
+            "text": "Đăng xuất",
+            "title": "Đăng xuất",
+            "active_key": "logout",
+            "route": "logout",
+            "icon": "power-off"
+        }
+    ],
+    "created_at": "2017-12-26 13:08:50"
+}

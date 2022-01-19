@@ -1,0 +1,36 @@
+{
+    "data": {
+        "name": { "type": "text", "text": "Tên menu", "placeholder": "Nhập tên menu" },
+
+        "type": {
+            "type": "select",
+            "text": "Loại menu",
+            "data": {
+                "default": "Menu cứng",
+                "category": "Danh mục sản phẩm",
+                "post_category": "Danh mục bài viết",
+                "page": "Trang",
+                "json": "JSON",
+                "define": "Tự định nghĩa"
+            }
+        },
+        "data": {
+            "type": "text",
+            "text": "Hàm / Phương thức",
+            "placeholder": "Nhập hàm hoặc phương thức"
+        },
+
+        "active": {
+            "type": "checkbox",
+            "text": "Mở rộng",
+            "data": ["Không", "Có"],
+            "default": 0,
+            "check_label": "Menu chinh"
+        },
+        "priority": { "type": "select", "text": "Độ ưu tiên", "data": "App\\Models\\Menu::getMenuPriorityList" },
+
+        "nothing": { "type": "hidden" }
+    },
+    "created_at": "2017-12-25 24:35:12",
+    "created_by": "Doanln"
+}

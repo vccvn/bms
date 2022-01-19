@@ -1,0 +1,14 @@
+{
+    "data": {
+        "title": { "type": "text", "text": "Tiêu đề slide", "placeholder": "Nhập Tiêu đề" },
+        "slider_id": { "type": "hidden" },
+        "link": { "type": "text", "text": "Liên kết" },
+        "description": { "type": "textarea", "text": "Mô tả", "className": "slider-desc" },
+        "url": { "type": "text", "text": "Link video youtube" },
+        "image": { "type": "file", "text": "Hình ảnh", "className": "image-slider" },
+        "priority": { "type": "select", "text": "Độ ưu tiên", "call": "App\\Models\\Slider::getItemPriorityList", "param": "@slider_id" },
+        "nothing": { "type": "hidden" }
+    },
+    "created_at": "2017-12-25 24:35:12",
+    "created_by": "Doanln"
+}

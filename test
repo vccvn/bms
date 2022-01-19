@@ -1,0 +1,86 @@
+#!/usr/bin/env php
+<?php 
+
+Class Table{
+    protected $data = [];
+
+    public function getData()
+    {
+        return $this->data;
+    }
+
+    public function __call($name, $params)
+    {
+        $this->data[] = $params[0];
+        return (new static());
+    }
+}
+
+// $table = new Table;
+
+// $table->integer('bus_id')->default(0);
+//             $table->integer('route_id')->default(0);
+//             $table->integer('direction')->default(1);
+//             $table->integer('estimated_time')->nullable(0);
+//             $table->dateTime('started_at')->nullable();
+//             $table->dateTime('arrived_at')->nullable();
+//             $table->dateTime('completed_at')->nullable();
+
+// echo json_encode($table->getData());
+
+function get_time_seconds($time = null){
+    $xs = [1, 60, 3600];
+    $time = $time?$time:date('G:i:s');
+    $times = explode(':', $time);
+    $timeSeconds = 0;
+    $c = count($times);
+    if($c <= 3){
+        $n = 0;
+        for($i=$c-1; $i >= 0; $i--){
+            $nb = (int) $times[$i];
+            $timeSeconds+=$nb*$xs[$n];
+            $n++;
+        }
+    }
+    return $timeSeconds;
+}
+function getTimeArray($time)
+{
+    $m = 60;
+    $h = 3600;
+    $d = 3600*24;
+    $dd = $time % $d;
+    $day = ($time - $dd) / $d;
+    $dh = $dd % $h;
+    $hour = ($dd - $dh) / $h;
+    $dm = $dh % $m;
+    $minute = ($dh - $dm) / $m;
+    $second = $dm;
+    return compact('day', 'hour', 'minute', 'second');
+}
+
+
+function check_datetime($datetime){
+    preg_match_all('/^([0-9]){4}\-([0-9]){1,2}\-([0-9]){1,2}\s([0-9]){1,2}\:([0-9]){1,2}\:([0-9]){1,2}/',$datetime, $match);
+    return $match;
+}
+
+
+
+if(isset($argv[1]) && is_callable($argv[1])){
+    $a = $argv;
+    $f = $argv[1];
+    array_shift($a);
+    array_shift($a);
+    if(isset($a[0]) && is_callable($a[0])){
+        $f2 = $a[0];
+        array_shift($a);
+        for($i =0; $i < count($a); $i++){
+            $a[$i] = str_replace('_',' ', $a[$i]);
+        }
+        $param = call_user_func_array($f2, $a);
+    }else{
+        $param = $a;
+    }
+    call_user_func($f, $param);
+}

@@ -1,0 +1,75 @@
+{
+    "data": {
+        "title": { "type": "text", "text": "Tiêu đề / tên mục", "placeholder": "ví dụ: dự án" },
+        "custom_slug": { "type": "checkbox", "text": "", "check_label": "Slug" },
+        "slug": { "type": "text", "text": "Slug", "placeholder": "Slug" },
+        "parent_id": {
+            "type": "cubeselect",
+            "text": "mục cha",
+            "data": "App\\Repositories\\Dynamic\\DynamicRepository::getParentSelectOption"
+        },
+        "cate_id": {
+            "type": "cubeselect", 
+            "text": "Danh mục", 
+            "action": "App\\Repositories\\Dynamic\\CategoryRepository::getCategorySelectOptions",
+            "param":[2],
+            "option_label_type": "label",
+            "data-select-type": "static",
+            "data-changed-callback" : "console.log"
+        },
+        "product_cate_id": { 
+            "type": "cubeselect", 
+            "text": "Danh mục sản phẩm", 
+            "action": "App\\Repositories\\Products\\ProductCategoryRepository::getCategorySelectOptions",
+            "param":[2],
+            "option_label_type": "value",
+            "data-select-type": "static",
+            "data-changed-callback" : "console.log"
+        },
+
+        "description": { "type": "textarea", "text": "Mô tả ngắn", "row": 4 },
+
+        "content": { "type": "textarea", "text": "Nội dung", "class": "mce-editor", "height": 500 },
+        "keywords": { "type": "text", "text": "Từ khóa" },
+        "feature_image": { "type": "file", "text": "Hỉnh ảnh" },
+        "video_url": { "type": "text", "text": "Đường dẫn video", "placeholder": "ví dụ: http://www.youtube.com/watch?v=12GSE54" },
+        
+        
+        "show_thumbnail": { "type": "checkbox", "text": "Hiển thị Thumbnail", "check_label": "Hiển thị Thumbnail", "default": 1 },
+
+        "use_category": { "type": "checkbox", "text": "Sự dụng danh mục", "check_label": "Sự dụng danh mục cho mục con" },
+        
+        "allow_comment": { "type": "checkbox", "text": "cho phép bình luận", "check_label": "Cho phép bình luận" },
+
+        "with_sidebar": {
+            "type": "checkbox",
+            "text": "Hiển thị sidebar",
+            "check_label": "Hiển thị sidebar",
+            "default": 1
+        },
+
+
+        "gallery_images": { "type": "file", "text": "Thư viện ảnh", "multiple":"true", "className":"image-file-select" },
+        
+        "children_props": { "type": "textarea", "text": "Thuộc tính của mục con", "class": "auto-height", "placeholder":"ví dụ: name:type:label:default " },
+
+        "post_type": { 
+            "type": "cubeselect", 
+            "text": "Loại tin bài", 
+            "data": {
+                "article": "Bài viết",
+                "video": "Video",
+                "gallery": "Thư viện ảnh"
+            },
+            "option_label_type": "value",
+            "data-select-type": "static",
+            "data-changed-callback" : "console.log"
+        },
+
+
+
+        "nothing": { "type": "hidden" }
+    },
+    "created_at": "2018-04-04 00:06:12",
+    "created_by": "Doanln"
+}

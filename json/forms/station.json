@@ -1,0 +1,27 @@
+{
+    "data": {
+        "name": { "type": "text", "text": "Tên bến xe", "placeholder": "Nhập bến xe" },
+
+        "province_id": {
+            "type": "cubeselect",
+            "text": "Tỉnh thành",
+            "action": "App\\Repositories\\Provinces\\ProvinceRepository::getProvinceOptions",
+            "option_label_type": "value",
+            "data-select-type": "static"
+        },
+        "address": {
+            "type": "textarea",
+            "text": "Địa chỉ",
+            "placeholder":"Nhập địa chỉ"
+        },
+
+        "google_map": {
+            "type": "textarea",
+            "text": "Bản đồ",
+            "placeholder":"Nhập Mã nhúng google map"
+        },
+
+        "nothing": { "type": "hidden" }
+    },
+    "created_by": "Doanln"
+}

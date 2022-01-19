@@ -1,0 +1,170 @@
+/*.role-page .list-body>.row, .row.list-header,  .row.list-title,
+.nodale .list-body>.row, .row.list-header,  .row.list-title{
+    border-bottom:1px solid #444;
+    padding-top:5px;
+    padding-bottom:5px;
+}*/
+.role-page .list-body>.row:nth-child(odd),
+.modal .list-body>.row:nth-child(odd) {
+    background: #fafafa;
+}
+.role-page .list-body>.row:hover,
+.modal .list-body>.row:hover{
+    background:rgba(220,220,220,0.8);
+}
+.role-page .d-none,
+.modal .d-none{
+	display: none;
+}
+.role-page .d-block,
+.modal .d-block{
+	display: block;
+}
+.role-page .d-inline-block,
+.modal .d-inline-block{
+	display: inline-block;
+}
+.role-page table,
+.modal table{
+	width:100%;
+}
+.role-page .btn-action,
+.modal .btn-action{
+	text-align: center;
+}
+.role-page .btn-action, 
+.role-page .search-form .input-group{
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+.nav-tabs a.nav-link{
+    text-decoration: none;
+}
+/*
+.has-error input+span,
+.has-error select+span,
+.has-error textarea+span{
+	color: red;
+}
+*/
+.modal .list-body{
+	font-size: 13px;
+	max-height: 400px;
+	overflow-y: scroll;
+}
+
+.modal .list-body>.row>*[class*="col-"]{
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+#modal-role-users h3,
+#modal-role-modules h3{
+	margin: 0 auto;
+}
+
+#modal-role-users .loading,
+#modal-role-modules .loading{
+	text-align: center;
+	display: none;
+}
+#modal-role-users .loading.show,
+#modal-role-modules .loading.show{
+	display: block;
+}
+
+
+
+#modal-role-users .modal-list,
+#modal-role-modules .modal-list{
+	text-align: center;
+	display: none;
+}
+#modal-role-users .modal-list.show,
+#modal-role-modules .modal-list.show{
+	display: block;
+}
+
+
+
+@media (min-width: 768px) {
+	.role-page .d-sm-none{
+		display: none;
+	}
+	
+	.role-page .d-sm-block{
+		display: block;
+	}
+	.role-page .btn-action{
+    	text-align: left;
+    }
+	.role-page .btn-action-right{
+    	text-align: right;
+    }
+    .text-sm-right{
+    	text-align: right;
+    }
+
+}
+
+/*
+@media (max-width: 767.5px) {
+    .modal .modal-list *[class*="col-"] {
+        float: left;
+        box-sizing: border-box;
+    }
+    .modal .modal-list .col-1 {
+        width: 8.3333333333333333%;
+    }
+
+    .modal .modal-list .col-2 {
+        width: 16.666666666666666%;
+    }
+
+    .modal .modal-list .col-3 {
+        width: 25%;
+    }
+
+    .modal .modal-list .col-4 {
+        width: 33.333333333333333%;
+    }
+
+    .modal .modal-list .col-5 {
+        width: 41.666666666666666%;
+    }
+
+    .modal .modal-list .col-6 {
+        width: 50%;
+    }
+
+    .modal .modal-list .col-7 {
+        width: 58.333333333333334%;
+    }
+
+    .modal .modal-list .col-8 {
+        width: 66.666666666666667%;
+    }
+
+    .modal .modal-list .col-9 {
+        width: 75%;
+    }
+
+    .modal .modal-list .col-10 {
+        width: 83.33333333333334%;
+    }
+
+    .modal .modal-list .col-11 {
+        width: 91.66666666666667%;
+    }
+
+    .modal .modal-list .col-12 {
+        width: 100%;
+    }
+
+    .modal .modal-list .list-title.row>div:first-child{
+        text-align: left;
+    }
+
+}
+
+*/

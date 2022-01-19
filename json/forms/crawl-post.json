@@ -1,0 +1,53 @@
+{
+    "data": {
+        "dynamic_id": {
+            "type": "cubeselect", 
+            "text": "Mục", 
+            "action": "App\\Repositories\\Dynamic\\DynamicRepository::getPostSelectOption",
+            "option_label_type": "label",
+            "data-select-type": "static",
+            "data-changed-callback" : "Cube.crawler.changeDynamic",
+            "required": "true"
+        },
+        "cate_id": {
+            "type": "cubeselect", 
+            "text": "Danh mục", 
+            "action": "get_dynamic_category_options",
+            "param":"@dynamic_id",
+            "option_label_type": "label",
+            "data-select-type": "static",
+            "data-changed-callback" : "console.log",
+            "required": "true"
+        },
+        
+        "url": { 
+            "type": "text", 
+            "text": "Dường dẫn", 
+            "placeholder": "Nhập dường dẫn (URL)",
+            "required": "true"
+        },
+        "user_id": {
+            "type": "cubeselect", 
+            "text": "Tác giả", 
+            "action": "App\\Repositories\\Users\\UserRepository::getAuthorSelectOption",
+            "param":[true],
+            "option_label_type": "label",
+            "data-select-type": "static",
+            "data-changed-callback" : "console.log",
+            "required": "true"
+        },
+        "frame_id": {
+            "type": "cubeselect", 
+            "text": "Nguồn", 
+            "action": "App\\Repositories\\Crawl\\FrameRepository::getSelectOption",
+            "param":[true],
+            "option_label_type": "label",
+            "data-select-type": "static",
+            "data-changed-callback" : "console.log",
+            "required": "true"
+        }
+        
+    },
+    "created_at": "2018-03-07 14:41:12",
+    "created_by": "Doanln"
+}

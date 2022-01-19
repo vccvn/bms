@@ -1,0 +1,77 @@
+{
+    "data": [{
+            "text": "Dashboard",
+            "title": "Dashboard",
+            "active_key": "dashboard",
+            "route": "profile.manager.dashboard",
+            "icon": "home"
+        },
+        {
+            "text": "Thông tin cơ bản",
+            "title": "Thông tin cơ bản",
+            "active_key": "info",
+            "route": "profile.manager.info",
+            "icon": "info-circle"
+        },
+        {
+            "text": "Bài viết",
+            "title": "Bài viết",
+            "active_key": "post",
+            "route": "profile.manager.post",
+            "icon": "file-text-o",
+            "submenu": {
+                "type": "list",
+                "data": [{
+                        "text": "Bài viết",
+                        "title": "Danh sách bài viết",
+                        "active_key": "list",
+                        "route": "profile.manager.post.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Danh mục",
+                        "title": "Danh mục",
+                        "active_key": "list-category",
+                        "route": "profile.manager.post.category.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Thêm bài viết",
+                        "title": "Thêm bài viết",
+                        "active_key": "add",
+                        "route": "profile.manager.post.add",
+                        "icon": "plus"
+                    }
+
+                ]
+            }
+        },
+        {
+            "text": "Nội dung",
+            "title": "Nội dung",
+            "active_key": "content",
+            "route": "profile.manager.content",
+            "icon": "folder",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Thẻ",
+                        "title": "Thẻ",
+                        "active_key": "tag",
+                        "route": "profile.manager.content.tag",
+                        "icon": "tag"
+                    },
+                    {
+                        "text": "Slider",
+                        "title": "Slider",
+                        "active_key": "slider",
+                        "route": "profile.manager.slider.list",
+                        "icon": "picture-o"
+                    }
+                ]
+            }
+        }
+    ],
+    "created_at": "2018-05-27 16:02:41"
+}

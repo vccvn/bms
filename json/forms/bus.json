@@ -1,0 +1,111 @@
+{
+    "data": {
+        "company_id": {
+            "type": "cubeselect",
+            "text": "Nhà xe",
+            "action": "App\\Repositories\\Companies\\CompanyRepository::getCompanySelectOptions",
+            "option_label_type": "value",
+            "data-select-type": "static",
+            "required": "true"
+        },
+        "type": {
+            "type": "cubeselect",
+            "text": "Loại xe",
+            "data": {
+                "1": "Xe khách",
+                "2": "Xe buýt"
+            },
+            "data-select-type": "static",
+            "data-changed-callback": "Cube.bus.changeType",
+            "required": "true"
+        },
+        "route_id": {
+            "type": "cubeselect",
+            "text": "Đăng ký tuyến",
+            "action": "App\\Repositories\\Routes\\RouteRepository::getRouteOptions",
+            "param":"@type",
+            "option_label_type": "value",
+            "data-select-type": "static",
+            "required": "true"
+        },
+        "phone_number": {
+            "type": "text",
+            "text": "Số điên thoại",
+            "placeholder": "Nhập số điện thoại"
+        },
+        "license_plate": {
+            "type": "text",
+            "text": "Biển số xe",
+            "placeholder": "Nhập biển số xe"
+        },
+        "description": {
+            "type": "textarea",
+            "text": "Mô tả xe",
+            "placeholder": "Nhội dung mô tả"
+        },
+        "seets": {
+            "type": "number",
+            "label": "Số ghế (chỗ)",
+            "placeholder": "Nhập số ghế (chỗ)",
+            "required": "true"
+        },
+        "weight": {
+            "type": "number",
+            "label": "Tải trọng (tấn)",
+            "placeholder": "Nhập tải trọng",
+            "required": "true"
+        },
+        "freq_days": {
+            "type": "cubeselect",
+            "label": "Tần suất ngày",
+            "action": "App\\Repositories\\Buses\\BusRepository::getFreqDays",
+            "data-select-type": "static",
+            "data-changed-callback": "Cube.bus.changeFreqDays",
+            "required": "true"
+        },
+        "freq_trips": {
+            "type": "cubeselect",
+            "label": "Tần suất chuyến",
+            "action": "App\\Repositories\\Buses\\BusRepository::getFreqTrips",
+            "param": "@freq_days",
+            "data-select-type": "static",
+            "data-changed-callback": "Cube.bus.changeFreqTrips",
+            "required": "true"
+        },
+        "date_limited": {
+            "type": "checkbox",
+            "label": "Giới hạn ngày hoạt động",
+            "check_label": "Có"
+        },
+        "day_start": {
+            "type": "number",
+            "label": "Ngày bắt đầu hoạt dộng",
+            "placeholder": "Nhập nghày bắt đầu hoạt động trong tháng",
+            "min": 1,
+            "max": 31,
+            "step": 1
+        },
+        "day_stop": {
+            "type": "number",
+            "label": "Ngày cuối cùng hoạt dộng",
+            "placeholder": "Nhập nghày cuối hoạt động trong tháng",
+            "min": 1,
+            "max": 31,
+            "step": 1
+        },
+        "is_active": {
+            "type": "checkbox",
+            "label":"Trạng thái hoạt động",
+            "check_label": "Đang hoạt động"
+        },
+        
+        "nothing": {
+            "type": "hidden"
+        }
+    },
+    "test": [
+        
+        
+    ],
+    "created_by": "Doanln"
+}

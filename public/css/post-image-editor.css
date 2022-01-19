@@ -1,0 +1,68 @@
+.image-editor,
+.keep-original {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.cropit-preview {
+    /* You can specify preview size in CSS */
+    width: 400px;
+    height: 240px;
+}
+
+@media (min-width:576px) {
+    .image-editor,
+    .keep-original {
+        width: 520px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .cropit-preview {
+        /* You can specify preview size in CSS */
+        width: 520px;
+        height: 292px;
+    }
+}
+
+@media (min-width:720px) {
+    .image-editor,
+    .keep-original {
+        width: 660px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .cropit-preview {
+        /* You can specify preview size in CSS */
+        width: 660px;
+        height: 371px;
+    }
+}
+
+@media (min-width:768px) {
+    .image-editor,
+    .keep-original {
+        width: 480px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .cropit-preview {
+        /* You can specify preview size in CSS */
+        width: 480px;
+        height: 240px;
+    }
+}
+
+@media (min-width:1200px) {
+    .image-editor,
+    .keep-original {
+        width: 560px;
+        margin: 0 auto;
+        position: relative;
+    }
+    .cropit-preview {
+        /* You can specify preview size in CSS */
+        width: 560px;
+        height: 315px;
+    }
+}

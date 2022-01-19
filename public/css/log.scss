@@ -1,0 +1,17 @@
+.auth-container{
+    max-width: 992px;
+    width: 100% !important;
+
+    table {
+        th, td{
+            vertical-align: middle;
+            text-align: center;
+        }
+        .trip-tickets{
+            input{
+                max-width: 60px;
+            }
+        }
+    }
+
+}

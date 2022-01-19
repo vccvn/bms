@@ -1,0 +1,39 @@
+{
+    "data": {
+        "name": { "type": "text", "text": "Tên sản phẩm", "placeholder": "Tên sản phẩm" },
+        "code": { "type": "text", "text": "Mã sản phẩm" },
+
+        "list_price": { "type": "number", "text": "Giá niêm yết", "min": "0", "className": "text-right" },
+        "sale_price": { "type": "number", "text": "Giá bán", "min": "0", "className": "text-right" },
+        "total": { "type": "number", "text": "Tổng số sản phẩm", "className": "text-right" },
+
+        "substance": { "type": "text", "text": "Chất liệu" },
+        "brand": { "type": "text", "text": "Thương hiệu" },
+        
+        
+        "cate_id": { 
+            "type": "cubeselect", 
+            "text": "Danh mục",
+            "action": "App\\Repositories\\Products\\ProductCategoryRepository::getCategorySelectOptions",
+            "param":[2],
+            "option_label_type": "label",
+            "data-select-type": "static" 
+        },
+
+        "description": { "type": "textarea", "text": "Mô tả sản phẩm" },
+
+        "detail": { "type": "textarea", "text": "Chi tiết sản phẩm", "class": "mce-editor", "height": 400 },
+
+        "keywords": { "type": "text", "text": "Từ khóa" },
+
+        "feature_image": { "type": "file", "text": "Hỉnh ảnh" },
+        
+        "gallery_images": { "type": "file", "text": "Thư viện ảnh", "multiple":"true", "className":"image-file-select" },
+        
+
+
+        "nothing": { "type": "hidden" }
+    },
+    "created_at": "2018-03-07 14:41:12",
+    "created_by": "Doanln"
+}

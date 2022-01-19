@@ -1,0 +1,60 @@
+.image-upload-wrapper {
+  position: relative;
+}
+
+.image-upload-wrapper .uploader-btn-choose-file {
+  height: 44px;
+  widows: 100%;
+  display: block;
+}
+
+.image-upload-wrapper .image-file-select {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 44px;
+  opacity: 0;
+}
+
+.image-upload-wrapper .uploader-preview-frame {
+  display: none;
+}
+
+.image-upload-wrapper .uploader-preview-frame .uploader-preview {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.image-upload-wrapper .uploader-preview-frame .uploader-preview .upload-preview-item {
+  position: relative;
+  padding: 15px 10px;
+  box-sizing: border-box;
+  width: 25%;
+}
+
+.image-upload-wrapper .uploader-preview-frame .uploader-preview .upload-preview-item img {
+  margin: auto;
+  max-width: 100%;
+  max-height: 100px;
+  height: auto;
+  width: auto;
+}
+
+.image-upload-wrapper .uploader-preview-frame .uploader-preview .upload-preview-item .btn-delete, .image-upload-wrapper .uploader-preview-frame .uploader-preview .upload-preview-item .btn-trash {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: block;
+  padding: 6px 15px;
+  background: #fff;
+  background: rgba(255, 255, 255, 0.7);
+  color: #f00;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.image-upload-wrapper .uploader-preview-frame .uploader-preview .upload-preview-item .btn-delete:hover, .image-upload-wrapper .uploader-preview-frame .uploader-preview .upload-preview-item .btn-trash:hover {
+  background: white;
+}

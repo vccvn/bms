@@ -1,0 +1,176 @@
+{
+    "data": [{
+            "text": "Dashboard",
+            "title": "Dashboard",
+            "active_key": "dashboard",
+            "route": "profile.manager.dashboard",
+            "icon": "home"
+        },
+        {
+            "text": "Bài viết",
+            "title": "Bài viết",
+            "active_key": "post",
+            "route": "profile.manager.post",
+            "icon": "file-text-o",
+            "submenu": {
+                "type": "list",
+                "data": [{
+                        "text": "Bài viết",
+                        "title": "Danh sách bài viết",
+                        "active_key": "list",
+                        "route": "profile.manager.post.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Danh mục",
+                        "title": "Danh mục",
+                        "active_key": "list-category",
+                        "route": "profile.manager.post.category.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Thêm bài viết",
+                        "title": "Thêm bài viết",
+                        "active_key": "add",
+                        "route": "profile.manager.post.add",
+                        "icon": "plus"
+                    }
+
+                ]
+            }
+        },
+        {
+            "text": "Trang",
+            "title": "Trang",
+            "active_key": "page",
+            "route": "profile.manager.page",
+            "icon": "file-text",
+            "submenu": {
+                "type": "list",
+                "data": [{
+                        "text": "Danh sách trang",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "profile.manager.page.list",
+                        "icon": "th-list"
+                    },
+
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "profile.manager.page.add",
+                        "icon": "plus"
+                    },
+                    {
+                        "text": "Dynamic Page",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "profile.manager.page.list-dynamic",
+                        "icon": "th-list",
+                        "class": "dev-only"
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Phản hồi",
+            "title": "Phản hồi",
+            "active_key": "comment",
+            "url": "#",
+            "icon": "comment",
+            "submenu": {
+                "type": "list",
+                "data": [{
+                        "text": "Phản hồi bài viết",
+                        "title": "Phản hồi bài viết",
+                        "active_key": "post",
+                        "route": "profile.manager.comment.post",
+                        "icon": "file-text"
+                    },
+                    {
+                        "text": "Phản hồi sản phẩm",
+                        "title": "Phản hồi bài viết",
+                        "active_key": "product",
+                        "route": "profile.manager.comment.product",
+                        "icon": "leaf"
+                    },
+                    {
+                        "text": "Phản hồi trên trang",
+                        "title": "Phản hồi trên trang",
+                        "active_key": "page",
+                        "route": "profile.manager.comment.page",
+                        "icon": "file-text"
+                    },
+                    {
+                        "text": "Nhận hỗ trợ",
+                        "title": "Nhận hỗ trợ",
+                        "active_key": "help",
+                        "route": "profile.manager.comment.help",
+                        "icon": "info-circle"
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Liên hệ",
+            "title": "Liên hệ",
+            "active_key": "contact",
+            "route": "profile.manager.contact",
+            "icon": "envelope"
+        },
+        {
+            "text": "Menu",
+            "title": "Menu",
+            "active_key": "menu",
+            "route": "profile.manager.menu",
+            "icon": "bars",
+            "submenu": {
+                "type": "list",
+                "data": [{
+                        "text": "Danh sách",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "profile.manager.menu.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "profile.manager.menu.add",
+                        "icon": "plus"
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Nội dung",
+            "title": "Nội dung",
+            "active_key": "content",
+            "route": "profile.manager.content",
+            "icon": "folder",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Thẻ",
+                        "title": "Thẻ",
+                        "active_key": "tag",
+                        "route": "profile.manager.content.tag",
+                        "icon": "tag"
+                    },
+                    {
+                        "text": "Slider",
+                        "title": "Slider",
+                        "active_key": "slider",
+                        "route": "profile.manager.slider.list",
+                        "icon": "picture-o"
+                    }
+                ]
+            }
+        }
+
+    ],
+    "created_at": "2018-05-27 16:02:41"
+}

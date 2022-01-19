@@ -1,0 +1,57 @@
+.image-upload-wrapper {
+    position: relative;
+    .uploader-btn-choose-file {
+	    //display: none;
+	    height: 44px;
+	    widows: 100%;
+	    display: block;
+	}
+	.image-file-select {
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    height: 44px;
+	    opacity: 0;
+	}
+	.uploader-preview-frame {
+	    display: none;
+	    .uploader-preview {
+		    display: flex;
+		    -ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		    .upload-preview-item {
+			    position: relative;
+			    padding: 15px 10px;
+			    box-sizing: border-box;
+			    width: 25%;
+			    img{
+			    	margin: auto;
+			    	max-width: 100%;
+			    	max-height: 100px;
+			    	height: auto;
+			    	width: auto;
+			    }
+			    .btn-delete, .btn-trash {
+				    position: absolute;
+				    top: 15px;
+				    right: 15px;
+				    display: block;
+				    padding: 6px 15px;
+				    background: #fff;
+				    background: rgba(255, 255, 255, .7);
+				    color: #f00;
+				    font-weight: 600;
+				    text-decoration: none;
+				    &:hover {
+					    background: rgba(255, 255, 255, 1);
+					}
+				}
+
+			}
+
+		}
+
+	}
+
+}

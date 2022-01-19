@@ -1,0 +1,34 @@
+{
+    "data": {
+        "company_id": {
+            "type": "cubeselect",
+            "text": "Nhà xe",
+            "action": "App\\Repositories\\Companies\\CompanyRepository::getCompanySelectOptions",
+            "option_label_type": "value",
+            "data-select-type": "static",
+            "required": "true"
+        },
+        "route_id": {
+            "type": "cubeselect",
+            "text": "Đăng ký tuyến",
+            "action": "App\\Repositories\\Routes\\RouteRepository::getRouteOptions",
+            "option_label_type": "value",
+            "data-select-type": "static",
+            "required": "true"
+        },
+        "price": {
+            "type": "number",
+            "label": "Giá vé (VNĐ)",
+            "placeholder": "Nhập giá vé",
+            "required": "true"
+        },
+        "nothing": {
+            "type": "hidden"
+        }
+    },
+    "test": [
+        
+        
+    ],
+    "created_by": "Doanln"
+}

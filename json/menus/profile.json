@@ -1,0 +1,50 @@
+{
+    "data": [{
+            "text": "Trang cái nhân",
+            "title": "Trang cái nhân",
+            "active_key": "profile",
+            "route": "user.profile.info",
+            "icon": "user"
+        },
+        {
+            "text": "Thiết lập",
+            "title": "Thiết lập",
+            "active_key": "setting",
+            "route": "user.profile.setting",
+            "icon": "wrench",
+            "submenu": {
+                "type": "list",
+                "data": [{
+                        "text": "Thông tin cơ bản",
+                        "title": "Thông tin cơ bản",
+                        "active_key": "baseinfo",
+                        "route": "user.profile.setting.general",
+                        "icon": "info-circle"
+                    },
+                    {
+                        "text": "Đổi avatar",
+                        "title": "Đổi avatar",
+                        "active_key": "avatar",
+                        "route": "user.profile.setting.avatar",
+                        "icon": "camera"
+                    },
+                    {
+                        "text": "Tài khoản",
+                        "title": "Tài khoản",
+                        "active_key": "account",
+                        "route": "user.profile.setting.account",
+                        "icon": "lock"
+                    },
+                    {
+                        "text": "Mật khảu",
+                        "title": "Mật khảu",
+                        "active_key": "password",
+                        "route": "user.profile.setting.password",
+                        "icon": "key"
+                    }
+                ]
+            }
+        }
+    ],
+    "created_at": "2018-03-04 16:20:41"
+}

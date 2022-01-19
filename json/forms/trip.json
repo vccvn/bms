@@ -1,0 +1,17 @@
+{
+    "data": {
+        "started_at": { "type": "text", "text": "Xuất bến", "placeholder": "Nhập thời gian xuất phát", "className":"trip-datetime" },
+        "arrived_at": { "type": "text", "text": "Đến nơi", "placeholder": "Nhập thời gian đến nơi", "className":"trip-datetime" },
+
+        "status": {
+            "type": "select",
+            "text": "Trạng thái",
+            "data": {
+                "1": "Đã hoàn thành",
+                "0": "Chờ",
+                "-1": "Bị hủy"
+            }
+        }
+    },
+    "created_by": "Doanln"
+}

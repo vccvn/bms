@@ -1,0 +1,23 @@
+{
+    "data": {
+        "name": { "type": "text", "text": "Tên website", "placeholder": "Nhập tên website", "required":"true"},
+        "url": { "type": "text", "text": "Đường dẫn website", "placeholder": "Nhập đường dẫn website", "required":"true" },
+        "title": { "type": "text", "text": "Tiêu đề", "placeholder": "Nhập thẻ", "required":"true" },
+        "attr_title": { "type": "text", "text": "Thuộc tính Tiêu đề", "placeholder": "Thuộc tính" },
+        "image": { "type": "text", "text": "Hình ảnh", "placeholder": "Nhập thẻ" },
+        "attr_image": { "type": "text", "text": "Thuộc tính ảnh", "placeholder": "Thuộc tính" },
+        "description": { "type": "text", "text": "Mô tả", "placeholder": "Nhập thẻ" },
+        "attr_description": { "type": "text", "text": "Thuộc tính mô tả", "placeholder": "Thuộc tính" },
+        "tag": { "type": "text", "text": "Thẻ bài viết", "placeholder": "Nhập thẻ" },
+        "attr_tag": { "type": "text", "text": "Thuộc tính thẻ", "placeholder": "Thuộc tính" },
+        "content": { "type": "text", "text": "Nội dung", "placeholder": "Nhập thẻ", "required":"true" },
+        "except": { "type": "text", "text": "Loại bỏ", "placeholder": "Nhập thẻ" },
+        "meta_title": { "type": "text", "text": "Tiêu đề (SEO)", "placeholder": "Nhập tiêu đề" },
+        "meta_description": { "type": "textarea", "text": "Mô tả (SEO)", "placeholder": "Nhập mô tả" },
+        "meta_keyword": { "type": "text", "text": "Từ khóa (SEO)", "placeholder": "Nhập thẻ" },
+        "index": { "type": "number", "text": "Index", "placeholder": "Nhập index", "min":0 },
+        "style": { "type": "textarea", "text": "Style", "placeholder": "Nhập style", "default":"<style></style>" }
+    },
+    "created_at": "2018-10-31 00:06:12",
+    "created_by": "Doanln"
+}

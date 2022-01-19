@@ -1,0 +1,47 @@
+{
+    "data": {
+        "name": { "type": "text", "text": "Tên module", "placeholder": "Nhập tên module" },
+
+        "type": {
+            "type": "select",
+            "text": "Loại module",
+            "data": {
+                "default": "Module cứng",
+                "route_name": "Sử dụng tên route",
+                "route_prefix": "Sự dụng route prefix",
+                "route_uri": "Sử dụng dường dẫn của route"
+            }
+        },
+        "parent_id": {
+            "type": "select",
+            "text": "Module cha",
+            "data": "App\\Repositories\\Modules\\ModuleRepository::getParentSelectOption"
+        },
+
+        "route_uri": {
+            "type": "select",
+            "text": "Chọn URI",
+            "data": "Cube\\Laravel\\LaravelRoute::getSelectUri"
+        },
+        "route_prefix": {
+            "type": "select",
+            "text": "Chọn Prefix",
+            "data": "Cube\\Laravel\\LaravelRoute::getSelectPrefix"
+        },
+        "route_name": {
+            "type": "select",
+            "text": "Chọn tên route",
+            "data": "Cube\\Laravel\\LaravelRoute::getSelectNameAndUri"
+        },
+        "description": {
+            "type": "textarea",
+            "text": "Mô tả",
+            "placeholder": "Mô tả module"
+        },
+
+
+        "nothing": { "type": "hidden" }
+    },
+    "created_at": "2018-01-27 23:35:12",
+    "created_by": "Doanln"
+}

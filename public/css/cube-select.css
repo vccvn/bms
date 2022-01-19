@@ -1,0 +1,122 @@
+.cube-select-group {
+  max-width: 100%;
+  width: 100%;
+}
+
+.cube-select-group .btn.dropdown-toggle {
+  overflow: hidden;
+  position: relative;
+  max-width: 100%;
+  text-align: left;
+  padding-right: 40px;
+}
+
+.cube-select-group .btn.dropdown-toggle::after {
+  position: absolute;
+  right: 1rem;
+  top: 40%;
+}
+
+.cube-select-group .dropdown-header {
+  font-weight: 700;
+}
+
+.cube-select-group h6.dropdown-header {
+  cursor: default;
+}
+
+.cube-select-group.disable-search .search-block {
+  display: none;
+}
+
+.cube-select-group > .dropdown-menu {
+  width: 100%;
+}
+
+.cube-select-group > .dropdown-menu > .option-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > a.dropdown-item {
+  padding-left: 1rem;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > a.dropdown-item {
+  padding-left: 2rem;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .dropdown-header {
+  padding-left: 1rem !important;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > a.dropdown-item {
+  padding-left: 3rem;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .dropdown-header {
+  padding-left: 2rem !important;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > a.dropdown-item {
+  padding-left: 4rem;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .dropdown-header {
+  padding-left: 3rem !important;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > a.dropdown-item {
+  padding-left: 5rem;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .dropdown-header {
+  padding-left: 4rem !important;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > a.dropdown-item {
+  padding-left: 6rem;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .dropdown-header {
+  padding-left: 5rem !important;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > a.dropdown-item {
+  padding-left: 7rem;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .dropdown-header {
+  padding-left: 6rem !important;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > a.dropdown-item {
+  padding-left: 8rem;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .dropdown-header {
+  padding-left: 7rem !important;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > a.dropdown-item {
+  padding-left: 9rem;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .dropdown-header {
+  padding-left: 8rem !important;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > a.dropdown-item {
+  padding-left: 10em;
+}
+
+.cube-select-group > .dropdown-menu > .option-list > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .option-group > .dropdown-header {
+  padding-left: 9rem !important;
+}
+
+@media (min-width: 768px) {
+  .items-list-page .items-search {
+    width: 400px;
+    max-width: 50%;
+  }
+}

@@ -1,0 +1,44 @@
+{
+    "data": {
+        "name": {
+            "type": "text",
+            "text": "Tên chủ đề",
+            "placeholder": "Nhập tên chủ để. Ví dụ: Tin tức"
+        },
+        "parent_id": {
+            "type": "cubeselect",
+            "text": "Chủ đề cha",
+            "action": "App\\Repositories\\Posts\\CategoryRepository::getParentSelectOptions",
+            "param":[2],
+            "option_label_type": "value",
+            "data-select-type": "static"
+        },
+        "description": {
+            "type": "textarea",
+            "text": "Mô tả",
+            "height": 300
+
+        },
+        "keywords": {
+            "type": "text",
+            "text": "Từ khóa",
+            "placeholder": "Các từ khòa cách nhau bằng dấu phẩy (,)"
+        },
+        "feature_image": { "type": "file", "text": "Hỉnh ảnh" },
+        "is_menu": {
+            "type": "checkbox",
+            "text": "Menu",
+            "default": 0,
+            "check_label": "Có"
+        },
+        "show_home": {
+            "type": "checkbox",
+            "text": "Trên trang chủ",
+            "default": 0,
+            "check_label": "Hiển thị"
+        },
+        "nothing": { "type": "hidden" }
+    },
+    "created_at": "2017-12-27 23:29:12",
+    "created_by": "Doanln"
+}

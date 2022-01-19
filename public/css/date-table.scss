@@ -1,0 +1,64 @@
+.date-table{
+    tbody{
+        tr{
+            td{
+                position: relative;
+                height: 70px;
+                vertical-align: middle;
+                text-align: center;
+                padding: 0 0 0 0 !important;
+        
+            }
+        }
+    }
+    .day-block{
+        .day-group{
+            height: 70px;
+            width: 100%;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            text-align: left;
+            .item-check{
+                height: 70px;
+                padding-left: 5px;
+            }
+        }
+    }
+}
+.schedule{
+    thead{
+        tr{
+            th{
+                text-align: center;
+            }
+        }
+    }
+    td{
+        &.disabled{
+            background: rgb(243, 243, 243);
+        }
+    }
+    
+    .go-forward{
+        .radio:checked + span:before,
+        .checkbox:checked + span:before {
+          color: #85CE36; 
+        }
+    }
+
+    .go-back{
+        .radio:checked + span:before,
+        .checkbox:checked + span:before {
+            color: #fe821d;
+        }
+    }
+    
+}
+
+@media screen and (min-width:992px) and (max-width:1150px){
+    .break-point{
+        overflow-x: auto;
+    }
+}

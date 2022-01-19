@@ -1,0 +1,20 @@
+{
+    "data": [
+        {
+            "text": "Dashboard",
+            "title": "Dashboard",
+            "active_key": "dashboard",
+            "route": "admin.dashboard",
+            "icon": "home"
+        },
+        {
+            "text": "Kiểm soát ra / vào",
+            "title": "Kiểm soát ra / vào",
+            "active_key": "checkin",
+            "route": "admin.checkin",
+            "icon": "check"
+            
+        }
+    ],
+    "created_at": "2018-01-27 01:20:41"
+}

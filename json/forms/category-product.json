@@ -1,0 +1,38 @@
+{
+    "data": {
+        "name": {
+            "type": "text",
+            "text": "Tên Danh mục",
+            "placeholder": "Nhập tên danh mục. Ví dụ: Bóng đèn"
+        },
+        "parent_id": {
+            "type": "cubeselect",
+            "text": "Danh mục cha",
+            "action": "App\\Repositories\\Products\\ProductCategoryRepository::getParentSelectOptions",
+            "param":[2],
+            "option_label_type": "value",
+            "data-select-type": "static"
+        },
+        "description": {
+            "type": "textarea",
+            "text": "Mô tả",
+            "class":"auto-height"
+
+        },
+        "keywords": {
+            "type": "text",
+            "text": "Từ khóa",
+            "placeholder": "Các từ khòa cách nhau bằng dấu phẩy (,)"
+        },
+        "feature_image": { "type": "file", "text": "Hỉnh ảnh" },
+        "is_menu": {
+            "type": "checkbox",
+            "text": "Menu",
+            "default": 0,
+            "check_label": "Hiển thị trên menu"
+        },
+        "nothing": { "type": "hidden" }
+    },
+    "created_at": "2017-12-27 23:29:12",
+    "created_by": "Doanln"
+}

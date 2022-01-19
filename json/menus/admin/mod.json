@@ -1,0 +1,202 @@
+{
+    "data": [
+        {
+            "text": "Dashboard",
+            "title": "Dashboard",
+            "active_key": "dashboard",
+            "route": "admin.dashboard",
+            "icon": "home"
+        },
+        {
+            "text": "Tỉnh Thành",
+            "title": "Tỉnh Thành",
+            "active_key": "province",
+            "route": "admin.province",
+            "icon": "globe"
+        },
+        {
+            "text": "Bến xe đầu cuối",
+            "title": "Bến xe đầu cuối",
+            "active_key": "station",
+            "route": "admin.station",
+            "icon": "flag"
+        },
+        {
+            "text": "Địa điểm hành trình",
+            "title": "Điểm dừng đỗ / đón trả khách / đi qua / cung đường",
+            "active_key": "place",
+            "route": "admin.place",
+            "icon": "map-marker"
+        },
+        {
+            "text": "Quản lý tuyến",
+            "title": "Quản lý tuyến xe",
+            "active_key": "route",
+            "route": "admin.route",
+            "icon": "road"
+            
+        },
+        {
+            "text": "Quản lý nhà xe",
+            "title": "Quản lý nhà xe",
+            "active_key": "company",
+            "route": "admin.company",
+            "icon": "truck"
+            
+        },
+        {
+            "text": "Quản lý xe",
+            "title": "Quản lý xe",
+            "active_key": "bus",
+            "route": "admin.bus",
+            "icon": "car"
+            
+        },
+        {
+            "text": "Quản lý lịch trình",
+            "title": "Quản lý lịch trình",
+            "active_key": "schedule",
+            "route": "admin.schedule.list",
+            "icon": "calendar"
+            
+        },
+        {
+            "text": "Quản lý chuyến",
+            "title": "Quản lý chuyến",
+            "active_key": "trip",
+            "route": "admin.trip.list",
+            "icon": "rocket"
+            
+        },
+        {
+            "text": "Kiểm soát ra / vào",
+            "title": "Kiểm soát ra / vào",
+            "active_key": "checkin",
+            "route": "admin.checkin",
+            "icon": "check"
+            
+        },
+        {
+            "text": "Bảng giá vé",
+            "title": "Bảng giá vé",
+            "active_key": "ticket-price",
+            "route": "admin.ticket.price",
+            "icon": "money"
+            
+        },
+        {
+            "text": "Quản lý người dùng",
+            "title": "Người dùng",
+            "active_key": "user",
+            "route": "admin.user.list",
+            "icon": "user"
+        },
+        {
+            "text": "Bài viết",
+            "title": "Bài viết",
+            "active_key": "post",
+            "route": "admin.post",
+            "icon": "file-text-o",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Bài viết",
+                        "title": "Danh sách bài viết",
+                        "active_key": "list",
+                        "route": "admin.post.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Danh mục",
+                        "title": "Danh mục",
+                        "active_key": "list-category",
+                        "route": "admin.post.category.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Thêm bài viết",
+                        "title": "Thêm bài viết",
+                        "active_key": "add",
+                        "route": "admin.post.add",
+                        "icon": "plus"
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Trang",
+            "title": "Trang",
+            "active_key": "page",
+            "route": "admin.page",
+            "icon": "file-text",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Danh sách trang",
+                        "title": "Danh sách",
+                        "active_key": "list",
+                        "route": "admin.page.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Thêm mới",
+                        "title": "Thêm mới",
+                        "active_key": "add",
+                        "route": "admin.page.add",
+                        "icon": "plus"
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Crawler",
+            "title": "Crawler",
+            "active_key": "crawler",
+            "route": "admin.crawler",
+            "icon": "copy",
+            "submenu": {
+                "type": "list",
+                "data": [
+                    {
+                        "text": "Crawl Post",
+                        "title": "Crawl Post",
+                        "active_key": "crawl-post",
+                        "route": "admin.crawler.post.crawl",
+                        "icon": "copy"
+                    },
+                    {
+                        "text": "Frame",
+                        "title": "Frame",
+                        "active_key": "crawl-frame",
+                        "route": "admin.crawler.frame.list",
+                        "icon": "th-list"
+                    },
+                    {
+                        "text": "Task",
+                        "title": "Task",
+                        "active_key": "crawl-task",
+                        "route": "admin.crawler.task.list",
+                        "icon": "tasks"
+                    }
+                ]
+            }
+        },
+        {
+            "text": "Đăng ký theo dõi",
+            "title": "Đăng ký theo dõi",
+            "active_key": "subxriber",
+            "route": "admin.subcriber",
+            "icon": "envelope"
+        },
+        {
+            "text": "Liên hệ",
+            "title": "Liên hệ",
+            "active_key": "contact",
+            "route": "admin.contact",
+            "icon": "envelope"
+        }
+    ],
+    "created_at": "2018-01-27 01:20:41"
+}

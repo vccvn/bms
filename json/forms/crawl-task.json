@@ -1,0 +1,92 @@
+{
+    "data": {
+        "dynamic_id": {
+            "type": "cubeselect", 
+            "text": "Mục", 
+            "action": "App\\Repositories\\Dynamic\\DynamicRepository::getPostSelectOption",
+            "option_label_type": "label",
+            "data-select-type": "static",
+            "data-changed-callback" : "Cube.crawler.changeDynamic",
+            "required": "true"
+        },
+        
+        "url": { "type": "text", "text": "Đường dẫn (URL)", "placeholder": "Nhập đường dẫn (URL)", "required":"true" },
+        "url_post": { "type": "text", "text": "Thẻ đường dẫn", "placeholder": "Nhập thẻ (ví dụ a[data-role=\"nav-link\"])", "required":"true" },
+        "quantity": { "type": "number", "text": "Số bài viết", "placeholder": "Nhập số bài viết", "required":"true" },
+        "repeat_time": {
+            "type": "cubeselect", 
+            "text": "Thời gian lâp", 
+            "option_label_type": "label",
+            "data-select-type": "static",
+            "data-changed-callback" : "console.log",
+            "required": "true",
+            "data":{
+                "00:05:00": "5 phút",
+                "00:10:00": "10 phút",
+                "00:15:00": "15 phút",
+                "00:30:00": "30 phút",
+                "01:00:00": "1 tiếng",
+                "02:00:00": "2 tiếng",
+                "03:00:00": "3 tiếng",
+                "06:00:00": "6 tiếng",
+                "12:00:00": "12 tiếng",
+                "24:00:00": "24 tiếng"
+            }
+        },
+        "crawl_time": { 
+            "type": "text", 
+            "text": "Thời gian crawl", 
+            "placeholder": "Nhập số bài viết", 
+            "required":"true", 
+            "data-format":"H:m:s", 
+            "className":"datetime-picker",
+            "default":"01:30:00"
+        },
+        "run_time": { "type": "checkbox", "text": "Thời gian crawl", "check_label":"Chọn"},
+        "status": { 
+            "type": "cubeselect", 
+            "text": "Trạng thái", 
+             "required":"true",
+             "data":{
+                 "1": "Bật",
+                 "0": "Tắt"
+             }
+        },
+        "cate_id": {
+            "type": "cubeselect", 
+            "text": "Danh mục", 
+            "action": "get_dynamic_category_options",
+            "param":"@dynamic_id",
+            "option_label_type": "label",
+            "data-select-type": "static",
+            "data-changed-callback" : "console.log",
+            "required": "true"
+        },
+        "user_id": {
+            "type": "cubeselect", 
+            "text": "Tác giả", 
+            "action": "App\\Repositories\\Users\\UserRepository::getAuthorSelectOption",
+            "param":[true],
+            "option_label_type": "label",
+            "data-select-type": "static",
+            "data-changed-callback" : "console.log",
+            "required": "true"
+        },
+        "frame_id": {
+            "type": "cubeselect", 
+            "text": "Nguồn", 
+            "action": "App\\Repositories\\Crawl\\FrameRepository::getSelectOption",
+            "param":[true],
+            "option_label_type": "label",
+            "data-select-type": "static",
+            "data-changed-callback" : "console.log",
+            "required": "true"
+        }
+        
+
+        
+        
+    },
+    "created_at": "2018-10-31 00:06:12",
+    "created_by": "Doanln"
+}

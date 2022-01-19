@@ -1,0 +1,55 @@
+{
+    "data": [
+        {
+            "label":"URL",
+            "id":"item-default",
+            "class":"item-default",
+            "type":"default",
+            "inputs":["title","url","target","active_key","priority","classname","icon"],
+            "hidden" : []
+        },
+        {
+            "label":"Route",
+            "id":"item-route",
+            "class":"item-route",
+            "type":"route",
+            "inputs":["title","route", "param", "active_key","priority","classname","icon"],
+            "hidden" : []
+        },
+        {
+            "label":"Danh mục bài viết",
+            "id":"item-category",
+            "class":"item-category",
+            "type":"category",
+            "inputs":["cate_id","target","active_key","priority","classname","icon"],
+            "hidden" : [{"name":"title","value":""}]
+        },
+        {
+            "label":"Danh mục sản phẩm",
+            "id":"item-product-category",
+            "class":"item-product-category",
+            "type":"product_category",
+            "inputs":["product_cate_id","target","active_key","priority","classname","icon"],
+            "hidden" : [{"name":"title","value":""}]
+        },
+        {
+            "label":"Trang",
+            "id":"item-page",
+            "class":"item-page",
+            "type":"page",
+            "inputs":["page_id","target","active_key","priority","classname","icon"],
+            "hidden" : [{"name":"title","value":""}]
+        },
+        {
+            "label":"Tự định nghĩa",
+            "id":"item-define",
+            "class":"item-define",
+            "type":"define",
+            "inputs":["title","action","param","target","active_key","priority","classname","icon"],
+            "hidden" : []
+        }
+        
+    ],
+    "created_at": "2018-05-08 15:21:13",
+    "created_by": "Doanln"
+}
